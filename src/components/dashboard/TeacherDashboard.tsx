@@ -7,6 +7,7 @@ import { DifficultTopics } from "./DifficultTopics";
 import { StudentDetails } from "./StudentDetails";
 import { ChatPanel } from "./ChatPanel";
 import { ActionButtons } from "./ActionButtons";
+import { AnnouncementsPanel } from "./AnnouncementsPanel";
 
 export function TeacherDashboard() {
   const [selectedStudent, setSelectedStudent] = useState(null);
@@ -46,6 +47,9 @@ export function TeacherDashboard() {
 
         {/* Students Table */}
         <StudentsTable onStudentClick={handleStudentClick} />
+
+        {/* Announcements Panel */}
+        <AnnouncementsPanel />
 
         {/* Bottom Row - Chat and Actions */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
