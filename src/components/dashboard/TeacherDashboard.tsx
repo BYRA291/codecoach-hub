@@ -128,18 +128,30 @@ export function TeacherDashboard() {
         </div>
 
         {/* Summary Cards */}
-        <SummaryCards />
+        <SummaryCards 
+          students={filteredStudents}
+          selectedSubject={filters.selectedSubject}
+          subjects={mockSubjects}
+        />
 
         {/* Charts and Tables Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Performance Chart - Takes 2 columns */}
           <div className="lg:col-span-2">
-            <PerformanceChart />
+            <PerformanceChart 
+              students={filteredStudents}
+              selectedSubject={filters.selectedSubject}
+              subjects={mockSubjects}
+            />
           </div>
           
           {/* Difficult Topics - Takes 1 column */}
           <div className="lg:col-span-1">
-            <DifficultTopics />
+            <DifficultTopics 
+              students={filteredStudents}
+              selectedSubject={filters.selectedSubject}
+              subjects={mockSubjects}
+            />
           </div>
         </div>
 
