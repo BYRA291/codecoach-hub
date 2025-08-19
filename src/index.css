@@ -8,78 +8,78 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Educational Dashboard Color Palette */
-    --background: 0 0% 98%;
-    --foreground: 225 15% 15%;
+    /* Dark Purple Theme - inspired by CodeBot interface */
+    --background: 230 25% 8%;
+    --foreground: 213 31% 91%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 225 15% 15%;
+    --card: 231 25% 12%;
+    --card-foreground: 213 31% 91%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 225 15% 15%;
+    --popover: 231 25% 12%;
+    --popover-foreground: 213 31% 91%;
 
-    /* Primary: Professional Blue */
-    --primary: 217 91% 50%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 217 91% 95%;
+    /* Primary: Purple */
+    --primary: 263 70% 50%;
+    --primary-foreground: 213 31% 91%;
+    --primary-light: 263 70% 85%;
 
-    /* Secondary: Neutral Gray */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 225 15% 15%;
+    /* Secondary: Dark Blue Gray */
+    --secondary: 230 25% 18%;
+    --secondary-foreground: 213 31% 91%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 230 25% 18%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 20% 96%;
-    --accent-foreground: 225 15% 15%;
+    --accent: 263 70% 50%;
+    --accent-foreground: 213 31% 91%;
 
-    /* Success: Educational Green */
+    /* Success: Green */
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
-    --success-light: 142 76% 95%;
+    --success-light: 142 76% 85%;
 
-    /* Warning: Attention Orange */
+    /* Warning: Orange */
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 98%;
-    --warning-light: 38 92% 95%;
+    --warning-light: 38 92% 85%;
 
-    /* Destructive: Alert Red */
+    /* Destructive: Red */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --destructive-light: 0 84% 95%;
+    --destructive-light: 0 84% 85%;
 
     /* Interactive Elements */
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 50%;
+    --border: 230 25% 25%;
+    --input: 230 25% 15%;
+    --ring: 263 70% 50%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 50%), hsl(217 91% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 50%), hsl(263 70% 60%));
     --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
-    --gradient-bg: linear-gradient(180deg, hsl(0 0% 98%), hsl(210 20% 98%));
+    --gradient-bg: linear-gradient(180deg, hsl(230 25% 8%), hsl(230 25% 10%));
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -2px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 230 35% 5%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 213 31% 91%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 263 70% 50%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 213 31% 91%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: 230 25% 15%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: 213 31% 91%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 230 25% 20%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 263 70% 50%;
   }
 
   .dark {
