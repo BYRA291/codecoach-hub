@@ -3,6 +3,7 @@ import { LogOut, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export function DashboardHeader() {
   const [selectedLanguage, setSelectedLanguage] = useState("all");
@@ -17,14 +18,17 @@ export function DashboardHeader() {
             <h1 className="text-2xl font-bold">Prof. Marcos</h1>
             <p className="text-primary-foreground/80">2º Ano B</p>
           </div>
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="bg-white/10 border-white/20 text-white hover:bg-white/20"
-          >
-            <LogOut className="h-4 w-4 mr-2" />
-            Logout
-          </Button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+            >
+              <LogOut className="h-4 w-4 mr-2" />
+              Logout
+            </Button>
+          </div>
         </div>
 
         {/* Filters Row */}
